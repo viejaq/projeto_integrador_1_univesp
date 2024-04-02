@@ -100,18 +100,24 @@ nav.navbar {
 nav.navbar.scrolled {
   padding: 0px 0;
   background: url('./assets/img/textura1.png');
+  color: #000;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+nav.navbar .navbar-nav .nav-link.navbar-link{
   font-weight: 400;
-  color: #fff !important;
+  color: #fff;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
 }
+
+nav.navbar.scrolled .navbar-nav .nav-link.navbar-link{
+  color: black;
+}
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -136,6 +142,12 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+nav.navbar.scrolled .social-icon a {
+  background: rgba(0, 0, 0, 0.13);
+  border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
 .social-icon a::before {
     content: "";
     width: 42px;
@@ -154,9 +166,13 @@ span.navbar-text {
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+
+
+
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -169,6 +185,12 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
+nav.navbar.scrolled .navbar-text button {
+  color: #000;
+  border: 1px solid #000;
+}
+
 .navbar-text button span {
   z-index: 1;
 }
@@ -182,6 +204,7 @@ span.navbar-text {
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
 }
 .navbar-text button:hover {
   color: #121212;
