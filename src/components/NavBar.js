@@ -9,6 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -59,9 +60,10 @@ export const NavBar = () => {
               <HashLink to='#contato'>
                 <button className="contato_button"><span>Orçamentos</span></button>
               </HashLink>
-              <HashLink to='#trabalhe_conosco'>
-                <button className="trabalhe_conosco"><span>Trabalhe conosco</span></button>
-              </HashLink>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="trabalhe_conosco" onClick={() => window.open("/trabalhe_conosco", "_blank")}>
+                <button><span>Trabalhe conosco</span></button>
+              </a>
+
             </span>
           </Navbar.Collapse>
         </Container>

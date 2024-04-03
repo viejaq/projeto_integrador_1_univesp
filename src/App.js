@@ -7,12 +7,16 @@ import { QuemSomos } from "./components/QuemSomos";
 import { Ambientes } from "./components/Ambientes";
 import { Contato } from "./components/Contato";
 import { Footer } from "./components/Footer";
+import { TrabalheConosco } from "./components/TrabalheConosco";
+
+
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Home />
+      <TrabalheConosco/>
       <QuemSomos />
       <Ambientes />
       <Contato />

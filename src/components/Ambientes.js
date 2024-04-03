@@ -1,8 +1,13 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { AmbientesCard } from "./AmbientesCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from  "../assets/img/imagem1.jpg"
+import projImg2 from "../assets/img/imagem4.jpg";
+import projImg3 from "../assets/img/imagem5.jpg";
+
+import projImg4 from "../assets/img/imagem2.jpg";
+import projImg5 from "../assets/img/imagem3.jpg";
+import projImg6 from "../assets/img/imagem6.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -28,18 +33,20 @@ export const Ambientes = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
     },
+   
+    
   ];
 
   return (
