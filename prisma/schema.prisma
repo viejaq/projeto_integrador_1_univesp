@@ -12,3 +12,21 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model cliente_contato{
+  id String @id @default(cuid())
+  nome String
+  telefone String
+  email String @unique
+  observacoes String
+  createdAt  DateTime @default(now())
+}
+
+model candidato{
+  id String @id @default(cuid())
+  nome String
+  telefone String
+  email String @unique
+  observacoes String
+  createdAt  DateTime @default(now())
+}
