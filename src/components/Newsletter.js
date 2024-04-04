@@ -28,10 +28,11 @@ export const Newsletter = ({ status, message, onValidated }) => {
           <Col lg={12} md={6} xl={5}>
             <div className="localizacao">
               <h2>Endereço</h2>
-              <p>Rua Major Carvalho Filho n. 1667 - Centro - Araraquara -SP</p>
-              <p>Horário de Funcionamento:</p>
-              <p>Seg - Sexta das 08:00 às 18:00</p>
-              <p>Sábado das 09:00 às 13:00</p>
+              <p>Rua Major Carvalho Filho n. 1667 - Centro</p>
+              <p>Araraquara -SP</p>
+              <p className="horario">Horário de Funcionamento:</p>
+              <p>Segunda a Sexta - 08:00 às 18:00</p>
+              <p>Sábado - 09:00 às 13:00</p>
               <div className="map">
                 {/* Aqui você pode integrar um mapa usando a API do Google Maps, Mapbox ou outra API de mapa */}
                 {/* Exemplo usando a API do Google Maps */}
