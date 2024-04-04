@@ -771,3 +771,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+.container .navbar-brand {
+  position: relative;
+}
+
+.container .navbar-brand::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff84;
+  top: 0;
+  left: 0;
+  content: '';
+  border-radius: 10%;
+  border: #00000000;
+}
+
+.scrolled > .container .navbar-brand::before {
+  opacity: 0;
+}
