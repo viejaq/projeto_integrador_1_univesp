@@ -400,7 +400,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Quem Somos Css ************/
 .quem_somos {
-  padding: 0 0 20px 0;
+  padding: 0 0 0px 0;
   background-image: url(./assets/img/textura1.png);
   position: relative;
 }
@@ -413,9 +413,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .quem_somos-bx {
-  background-color: #121212;
+  background-color: black;
   background-repeat: repeat;
-  border-radius: 64px;
+  border-radius: 64px 64px 0px 0px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
@@ -768,6 +768,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 
+.localizacao {
+  padding-top: 60px;
+}
+
 .footer img {
   width: 50%;
 }
@@ -780,8 +784,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
+.footer .container .social-icon a {
+  background-color:rgb(201,201,199);
+}
 
-.container .navbar-brand {
+/* .container .navbar-brand {
   position: relative;
 }
 
@@ -795,8 +802,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   content: '';
   border-radius: 10%;
   border: #00000000;
-}
+} */
 
-.scrolled > .container .navbar-brand::before {
-  opacity: 0;
-}
