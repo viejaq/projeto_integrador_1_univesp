@@ -8,6 +8,10 @@ import projImg4 from "../assets/img/imagem2.jpg";
 import projImg5 from "../assets/img/imagem3.jpg";
 import projImg6 from "../assets/img/imagem6.jpg";
 
+import coz1 from "../assets/img/coz1.png";
+import coz2 from "../assets/img/coz2.png";
+import coz3 from "../assets/img/coz3.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -18,7 +22,7 @@ export const Ambientes = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: coz1,
     },
     {
       title: "Business Startup",
@@ -33,7 +37,7 @@ export const Ambientes = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg4,
+      imgUrl: coz2,
     },
     {
       title: "Business Startup",
@@ -43,7 +47,7 @@ export const Ambientes = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg6,
+      imgUrl: coz3,
     },
    
     
