@@ -63,8 +63,6 @@ export const Home = () => {
                 <p>Nos preocupamos sempre em entregar móveis com muita qualidade e, por isso, garantimos uma equipe especializada de montadores.</p>
                 <p>Com a nossa alta tecnologia de cortes e montagens minuciosas, nós oferecemos um serviço que se atenta a todos os detalhes e proporciona resultados incríveis para o seu ambiente.</p>
                 <p>Venha nos visitar para vivenciar um pouco dessa experiência incrível!</p> */}
-
-
                   <button onClick={() => console.log('connect')}>Solicite seu orçamento<ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
