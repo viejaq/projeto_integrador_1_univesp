@@ -60,6 +60,9 @@ export const NavBar = () => {
               <HashLink to='#contato'>
                 <button className="contato_button"><span>Orçamentos</span></button>
               </HashLink>
+              <Navbar.Brand href="/trabalhe_conosco">
+                <button className="trabalhe_conosco"><span>Trabalhe conosco</span></button>
+              </Navbar.Brand>
               {/* <a href="#" target="_blank" rel="noopener noreferrer" className="trabalhe_conosco" onClick={() => window.open("/trabalhe_conosco", "_blank")}>
                 <button><span>Trabalhe conosco</span></button>
               </a> */}
