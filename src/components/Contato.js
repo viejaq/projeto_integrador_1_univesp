@@ -12,36 +12,28 @@ export const Contato = () => {
     phone: '',
     message: ''
   }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Enviar');
   const [status, setStatus] = useState({});
 
-  const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Enviando...");
-    let response = await fetch("http://localhost:3000/contato", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Enviado");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Orçamento solicitado com sucesso!'});
-    } else {
-      setStatus({ succes: false, message: 'Falha ao enviar'});
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Enviando...");
+  //   let response = await fetch("http://localhost:3000/contato", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(formDetails),
+  //   });
+  //   setButtonText("Enviado");
+  //   let result = await response.json();
+  //   setFormDetails(formInitialDetails);
+  //   if (result.code == 200) {
+  //     setStatus({ succes: true, message: 'Orçamento solicitado com sucesso!'});
+  //   } else {
+  //     setStatus({ succes: false, message: 'Falha ao enviar'});
+  //   }
+  // };
 
   return (
     <section className="contato" id="contato">
@@ -59,22 +51,22 @@ export const Contato = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Solicite seu orçamento</h2>
-                <form onSubmit={handleSubmit}>
+                <form>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.firstName} placeholder="Nome" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                      <input type="text" placeholder="Nome" />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Cidade" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" placeholder="Cidade"/>
                     </Col> 
                     <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder="WhatsApp" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                      <input type="email" placeholder="WhatsApp"/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder="E-mail" onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                      <input type="tel" placeholder="E-mail"/>
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Mensagem" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <textarea rows="6" placeholder="Mensagem"></textarea>
                       <button type="submit"><span>{buttonText}</span></button>
                     </Col>
                     {
