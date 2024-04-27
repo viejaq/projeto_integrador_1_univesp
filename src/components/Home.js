@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import headerImg from "../assets/img/header-img.svg";
-// import logoEscrito from "../assets/img/logo_escrito.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -56,14 +54,11 @@ export const Home = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                {/* <span className="tagline">Home</span> */}
-                {/* <img src={logoEscrito} alt="Logo Escrito"></img> */}
                 <h1>{`Há 30 anos tirando sonhos do papel`} </h1>
-                {/* <p>Uma empresa na qual se pode confiar</p>
-                <p>Nos preocupamos sempre em entregar móveis com muita qualidade e, por isso, garantimos uma equipe especializada de montadores.</p>
-                <p>Com a nossa alta tecnologia de cortes e montagens minuciosas, nós oferecemos um serviço que se atenta a todos os detalhes e proporciona resultados incríveis para o seu ambiente.</p>
-                <p>Venha nos visitar para vivenciar um pouco dessa experiência incrível!</p> */}
-                  <button onClick={() => console.log('connect')}>Solicite seu orçamento<ArrowRightCircle size={25} /></button>
+                <button className="orcamentoLink" onClick={() => console.log('connect')}>
+                  <a href="https://api.whatsapp.com/send/?phone=5516997751680&text=Ol%C3%A1%2C+Moveis+Minotti.+Gostaria+de+um+atendimento&type=phone_number&app_absent=0">Solicite seu orçamento</a>
+                  <ArrowRightCircle size={25} />
+                </button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -71,7 +66,6 @@ export const Home = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  {/* <img src={headerImg} alt="Header Img"/> */}
                 </div>}
             </TrackVisibility>
           </Col>

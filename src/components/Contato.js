@@ -25,7 +25,7 @@ export const Contato = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText("Enviando...");
     let response = await fetch("http://localhost:3000/contato", {
       method: "POST",
       headers: {
@@ -33,13 +33,13 @@ export const Contato = () => {
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("Send");
+    setButtonText("Enviado");
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
+      setStatus({ succes: true, message: 'Orçamento solicitado com sucesso!'});
     } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+      setStatus({ succes: false, message: 'Falha ao enviar'});
     }
   };
 

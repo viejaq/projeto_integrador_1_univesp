@@ -33,10 +33,6 @@ export const Newsletter = ({ status, message, onValidated }) => {
               <p className="horario">Horário de Funcionamento:</p>
               <p>Segunda a Sexta - 08:00 às 18:00</p>
               <p>Sábado - 09:00 às 13:00</p>
-              <div className="map">
-                {/* Aqui você pode integrar um mapa usando a API do Google Maps, Mapbox ou outra API de mapa */}
-                {/* Exemplo usando a API do Google Maps */}
-            </div>
           </div>
         </Col>
         <Col md={6} xl={7}>
