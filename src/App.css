@@ -1,4 +1,5 @@
 /* Fontes Custumizadas */
+
 @font-face {
   font-family: Centra;
   src: url('./assets/font/centran2-bold.ttf');
@@ -39,22 +40,13 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p,
-a,
-li,
-button,
-ul {
+p, a, li, button, ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -79,9 +71,7 @@ button {
   background-color: transparent;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
@@ -101,6 +91,7 @@ p.danger {
 }
 
 /************ Navbar Css ************/
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -119,6 +110,7 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
   width: 9%;
 }
+
 nav.navbar .navbar-nav .nav-link.navbar-link{
   font-weight: 400;
   color: #fff;
@@ -186,8 +178,6 @@ nav.navbar.scrolled .social-icon a {
   transition: 0.3s ease-in-out;
 }
 
-
-
 .social-icon a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -248,8 +238,7 @@ nav.navbar.scrolled .navbar-text button {
   position: absolute;
 }
 
-nav.navbar .navbar-toggler:active,
-nav.navbar .navbar-toggler:focus {
+nav.navbar .navbar-toggler:active, nav.navbar .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
@@ -302,6 +291,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Home Css ************/
+
+.orcamentoLink a {
+  color: white;
+  text-decoration: none;
+}
 
 .home {
   margin-top: 0;
@@ -368,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .home button svg {
   font-size: 25px;
   margin-left: 10px;
-  transition: 0.3s ease-in-out;
+  transition: 0s ease-in-out;
   line-height: 1;
 }
 
@@ -399,9 +393,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Quem Somos Css ************/
+
 .quem_somos {
   padding: 0 0 0px 0;
-  background-image: url(./assets/img/textura1.png);
+  background: linear-gradient(0deg, #101010 -5.91%, #a7a5b2 111.58%);
   position: relative;
 }
 
@@ -409,7 +404,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 650px;
   border-radius: 8px;
   padding-bottom: 70px;
-
 }
 
 .quem_somos-bx {
@@ -445,15 +439,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 
-/* .background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-} */
-
 /************ Ambientes Css ************/
+
 .ambientes {
   padding: 80px 0;
   position: relative;
@@ -514,12 +501,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .ambientes .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
 
 .ambientes .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
+  color: #000 !important;
 }
 
 .nav-link#ambientes-tabs-tab-first {
@@ -545,10 +534,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .ambientes-imgbx img {
-  height: 250px; /* Defina a altura desejada para todas as imagens */
+  height: 250px; /* Define a altura desejada para todas as imagens */
   object-fit: cover; /* Isso garante que a imagem cubra todo o espaço sem distorcer */
 }
-
 
 .ambientes-imgbx::before {
   content: "";
@@ -559,7 +547,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-
 
 .ambientes-imgbx:hover::before {
   height: 100%;
@@ -605,6 +592,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Contato Css ************/
+
 .contato {
   background: linear-gradient(90.21deg, #101010 -5.91%, #a7a5b2 111.58%);
   padding: 60px 0 200px 0;
@@ -620,8 +608,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 30px;
 }
 
-.contato form input,
-.contato form textarea {
+.contato form input, .contato form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -635,21 +622,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.contato form input:focus,
-.contato form textarea:focus {
+.contato form input:focus, .contato form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
 
-.contato form input::placeholder,
-.contato form textarea::placeholder {
+.contato form input::placeholder, .contato form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
 
-.contato form input:focus::placeholder,
-.contato form textarea:focus::placeholder {
+.contato form input:focus::placeholder, .contato form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
@@ -693,6 +677,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Footer Css ************/
+
 .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/textura1.png');
@@ -790,21 +775,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .horario {
   padding-top: 15px;
+  font-weight: bold !important;
 }
 
-/* .container .navbar-brand {
-  position: relative;
-}
-
-.container .navbar-brand::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff84;
-  top: 0;
-  left: 0;
-  content: '';
-  border-radius: 10%;
-  border: #00000000;
-} */
 

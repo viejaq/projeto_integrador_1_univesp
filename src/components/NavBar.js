@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.png';
-// import logo2 from '../assets/img/logo_escrito.png'
 import navIcon1 from '../assets/img/icon-whatsapp.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -40,7 +39,6 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
-            {/* <img src={logo2} alt="Logo2" className="logo2"/> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -60,10 +58,6 @@ export const NavBar = () => {
               <HashLink to='#contato'>
                 <button className="contato_button"><span>Orçamentos</span></button>
               </HashLink>
-              {/* <a href="#" target="_blank" rel="noopener noreferrer" className="trabalhe_conosco" onClick={() => window.open("/trabalhe_conosco", "_blank")}>
-                <button><span>Trabalhe conosco</span></button>
-              </a> */}
-
             </span>
           </Navbar.Collapse>
         </Container>
