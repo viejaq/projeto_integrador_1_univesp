@@ -10,12 +10,12 @@ function AppRouter() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={
-                    <AppHome />
-                } />
+                        <AppHome />
+                    } /> 
 
-                <Route path="/trabalhe_conosco" element={
+                <Route path="/trabalhe_conosco" element={ 
                     <AppTrabalheConosco />
-                } />
+                    } />
             </Routes>
         </BrowserRouter>
     )
