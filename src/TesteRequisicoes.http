@@ -1,0 +1,14 @@
+POST http://localhost:3030/dados_cliente HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "sample",
+    "cidade": "Araraquara",
+    "whatsapp": "(16)566651561",
+    "email": "jaque@gmail.com", 
+    "mensagem": "Mensagem"
+}
+
+###
+
+GET http://localhost:3030/dados_cliente HTTP/1.1

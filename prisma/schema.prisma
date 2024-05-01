@@ -16,17 +16,19 @@ datasource db {
 model cliente_contato{
   id String @id @default(cuid())
   nome String
-  telefone String
-  email String @unique
-  observacoes String
+  cidade String
+  whatsapp String
+  email String
+  mensagem String
   createdAt  DateTime @default(now())
 }
 
 model candidato{
   id String @id @default(cuid())
   nome String
-  telefone String
-  email String @unique
-  observacoes String
+  whatsapp String
+  email String
+  cargo String
+  mensagem String
   createdAt  DateTime @default(now())
 }
