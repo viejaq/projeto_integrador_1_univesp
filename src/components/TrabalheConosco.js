@@ -25,12 +25,12 @@ export const TrabalheConosco = () => {
     });
   };
 
-  const handleFileChange = (e) => {
-    setFormDetails({
-      ...formDetails,
-      file: e.target.files[0] // Armazenando o arquivo selecionado
-    });
-  };
+  // const handleFileChange = (e) => {
+  //   setFormDetails({
+  //     ...formDetails,
+  //     file: e.target.files[0] // Armazenando o arquivo selecionado
+  //   });
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
