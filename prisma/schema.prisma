@@ -13,16 +13,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model cliente_contato{
-  id String @id @default(cuid())
-  nome String
-  cidade String
-  whatsapp String
-  email String
-  mensagem String
-  createdAt  DateTime @default(now())
-}
-
 model candidato{
   id String @id @default(cuid())
   nome String
@@ -30,5 +20,52 @@ model candidato{
   email String
   cargo String
   mensagem String
-  createdAt  DateTime @default(now())
+  dt_criacao  DateTime @default(now())
+}
+
+model cliente{
+  id String @id @default(cuid())
+  nome String
+  cep String
+  numero String
+  complemento String
+  dt_criacao  DateTime @default(now())
+}
+
+model venda{
+  id String @id @default(cuid())
+  prazo_entrega DateTime
+  anexo Bytes
+  co_cliente String
+  dt_criacao  DateTime @default(now())
+}
+
+model status{
+  id String @id @default(cuid())
+  descrcao String
+  dt_criacao  DateTime @default(now())
+}
+
+model atividade{
+  id String @id @default(cuid())
+  co_venda String
+  co_status String
+  dt_criacao  DateTime @default(now())
+}
+
+model status_orcamento{
+  id String @id @default(cuid())
+  descricao String
+  dt_criacao  DateTime @default(now())
+}
+
+model orcamento{
+  id String @id @default(cuid())
+  nome String
+  cidade String
+  cell String
+  email String
+  mensagem String
+  co_status String
+  dt_criacao DateTime @default(now())
 }
