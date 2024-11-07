@@ -6,6 +6,7 @@ import { Ambientes } from "./components/Ambientes";
 import { Contato } from "./components/Contato";
 import { NavBar } from "./components/NavBar";
 import { Home } from "./components/Home";
+import { Footer } from './components/Footer';
 
 function AppHome() {
   return (
@@ -15,7 +16,8 @@ function AppHome() {
       <QuemSomos />
       <Ambientes />
       <Contato />
-    </div>
+      <Footer/>
+      </div>
   );
 }
 
