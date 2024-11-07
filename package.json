@@ -31,7 +31,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "api": "nodemon src/Backend.js"
+    "api": "nodemon src/backEnd/server.js"
   },
   "eslintConfig": {
     "extends": [

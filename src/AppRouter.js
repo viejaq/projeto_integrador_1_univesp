@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import AppHome from './AppHome';
-import AppTrabalheConosco from './AppTrabalheConosco';
-import Applogininterno from './Applogininterno';
-import AppInternoOrcamento from './AppInternoOrcamento';
-/*import AppInternoStatusPedidos from './components/AppInternoStatusPedidos';
-import AppInternoCadastrodeVendas from './AppInternoCadastrodeVendas';
-import AppInternoRH from './AppInternoRH';*/
+import AppHome from './frontEnd/AppHome';
+import AppTrabalheConosco from './frontEnd/AppTrabalheConosco';
+import Applogininterno from './frontEnd/Applogininterno';
+import AppInternoOrcamento from './frontEnd/appInterno/AppInternoOrcamento';
+import AppInternoStatusPedido from './frontEnd/appInterno/AppInternoStatusPedido'
+import AppInternoCadastrodeVenda from './frontEnd/appInterno/AppInternoCadastrodeVenda';
+import AppInternoRH from './frontEnd/appInterno/AppInternoRH';
 
 function AppRouter() {
     return (
@@ -16,11 +16,10 @@ function AppRouter() {
                 <Route path="/" element={<AppHome />} />
                 <Route path="/trabalhe_conosco" element={<AppTrabalheConosco />} />
                 <Route path="/login" element={<Applogininterno />} />
-                <Route path="/AppInternoOrcamento" element ={<AppInternoOrcamento/>} />
-               
-                {/* <Route path="/AppInternoRH" element ={<AppInternoRH/>} />
-                <Route path="/AppInternoStatusPedidos" element ={<AppInternoStatusPedidos/>} />
-                <Route path="/AppInternoCadastrodeVendas" element ={<AppInternoCadastrodeVendas/>} /> */}
+                <Route path="/AppInternoOrcamento" element={<AppInternoOrcamento />} />
+                <Route path="/AppInternoRH" element={<AppInternoRH />} />
+                <Route path="/AppInternoStatusPedido" element={<AppInternoStatusPedido />} />
+                <Route path="/AppInternoCadastrodeVenda" element={<AppInternoCadastrodeVenda />} />
             </Routes>
         </BrowserRouter>
     );

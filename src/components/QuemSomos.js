@@ -1,13 +1,9 @@
-
-
 import meter1 from "../assets/img/meter1.png";
 import meter2 from "../assets/img/meter2.png";
 import meter3 from "../assets/img/meter3.png";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 // import colorSharp from "../assets/img/textura1.png";
 import quemsomosimg from "../assets/img/quem_somos.png"
 // import logo2 from '../assets/img/logo_escrito.png';
@@ -55,13 +51,13 @@ export const QuemSomos = () => {
 
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme quem_somos-slider">
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="" />
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="" />
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="" />
                 </div>
               </Carousel>
             </div>

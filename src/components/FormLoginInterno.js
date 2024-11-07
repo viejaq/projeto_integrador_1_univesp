@@ -20,7 +20,7 @@ function FormLoginInterno() {
                         <input type="password" value="Senha" className="login-input" />
                     </div>
                     <div className="remember-me">
-                        <input type="checkbox" id="remember" />
+                        <input type="checkbox" id="remember" checked/>
                         <label className='textLoginInterno2' htmlFor="remember">Lembrar-me</label>
                     </div>
                     <button type="submit" className="login-button-interno">Entrar</button>

@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.png';
 import NavIconT from '../assets/img/icon-voltar.png';
-import { HashLink } from 'react-router-hash-link';
-import { Link } from "react-router-dom";
 
 export const NavBarTrabalheConosco = () => {
 

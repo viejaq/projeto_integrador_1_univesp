@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { NavBarTrabalheConosco } from './components/NavBarTrabalheConosco';
-import FormLoginInterno from './components/FormLoginInterno';
+import React from 'react';
+import { NavBarTrabalheConosco } from '../components/NavBarTrabalheConosco';
+import FormLoginInterno from '../components/FormLoginInterno';
 
 
 function Applogininterno() {

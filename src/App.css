@@ -119,6 +119,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  text-align: center;
 }
 
 nav.navbar.scrolled .navbar-nav .nav-link.navbar-link {
@@ -912,4 +913,12 @@ select option {
 .textLoginInterno2{
   font-weight: 12px;
   color: black;
+}
+
+.login-icon.scrolled img{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.navbar-nav a:nth-of-type(){
+  display: contents;
 }

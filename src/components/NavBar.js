@@ -68,14 +68,11 @@ export const NavBar = () => {
             <Navbar.Brand href="/trabalhe_conosco">
               <button className="trabalhe_conosco"><span>Trabalhe conosco</span></button>
             </Navbar.Brand>
-            {/* <a href="#" target="_blank" rel="noopener noreferrer" className="trabalhe_conosco" onClick={() => window.open("/trabalhe_conosco", "_blank")}>
-                <button><span>Trabalhe conosco</span></button>
-              </a> */}
           </span>
           <Navbar.Brand>
 
             <a href="/login" target="_blank" rel="noopener noreferrer">
-              <button className={`login-button-int ${scrolled ? 'scrolled' : ''}`}>
+              <button className={`login-icon ${scrolled ? 'scrolled' : ''}`}>
                 <img src={loginIcon} alt="Login" className="social-icon" />
               </button>
             </a>
