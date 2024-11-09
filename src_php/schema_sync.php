@@ -2,7 +2,7 @@
 /**
  * Caminho do arquivo SQLite e do arquivo SQL
  */
-$dbFile = 'minotti.sqlite';
+$dbFile = 'db/minotti.sqlite';
 $sqlFile = 'schema.sql';
 
 /**
