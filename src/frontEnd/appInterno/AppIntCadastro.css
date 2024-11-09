@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.app-interno .container {
+    width: 95%;
+    margin: 20px auto;
+}
+.app-interno .section-cadastro {
+    margin-top: 150px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#anexo {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.app-interno .main-header {
+    font-size: 24px;
+    background-color: #6c757d; /* Cinza mais escuro */
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.app-interno .form-header {
+    font-size: 20px;
+    background-color: #6c757d; /* Cinza mais escuro */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-interno .main-header .icon, .form-header .icon {
+    margin-right: 10px;
+}
+
+.app-interno .form-group {
+    margin-bottom: 15px;
+}
+
+.app-interno .form-group.inline {
+    display: inline-block;
+    width: 30%; 
+    margin-right: 1.66%; 
+}
+
+.app-interno .form-group.full-width {
+    width: 100%;
+    padding-right: 1.66%; 
+}
+
+.app-interno .form-group label {
+    color: black;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.app-interno .form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0; /* Cinza mais claro */
+}
+
+.app-interno .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.app-interno .form-actions button {
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.app-interno .form-actions button .icon {
+    margin-right: 10px;
+}
+
+.app-interno .form-actions button:hover {
+    background-color: #333;
+}

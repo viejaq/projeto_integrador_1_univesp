@@ -219,7 +219,7 @@ nav.navbar.scrolled .navbar-text button {
   z-index: 1;
 }
 
-.navbar-text button::before {
+/* .navbar-text button::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -234,7 +234,7 @@ nav.navbar.scrolled .navbar-text button {
 
 .navbar-text button:hover {
   color: #121212;
-}
+} */
 
 .navbar-text button:hover::before {
   content: "";
@@ -665,9 +665,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contato form button:hover {
   color: #fff;
-}
+} */
 
-.contato form button::before {
+/* .contato form button::before {
   content: "";
   background: #121212;
   border-radius: 8px;
@@ -678,9 +678,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
-}
+} */
 
-.contato form button:hover::before {
+/* .contato form button:hover::before {
   width: 100%;
 }
 
@@ -917,6 +917,11 @@ select option {
 
 .login-icon.scrolled img{
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  width: 30px;
+}
+
+.login-icon.scrolled img:hover {
+  color: red;
 }
 
 .navbar-nav a:nth-of-type(){

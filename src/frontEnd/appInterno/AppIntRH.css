@@ -1,0 +1,88 @@
+.app-interno .container-rh {
+    margin-top: 150px !important;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.app-interno .linha {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.app-interno .col-4 {
+    display: inline-block;
+}
+
+.app-interno .icon {
+    padding-right: 10px;
+}
+
+.app-interno .sectionFiltroRH {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.app-interno h1 {
+    text-align: start;
+    padding: 13px 0px;
+    color: white;
+    font-size: 22px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #6C757D;
+}
+
+.app-interno .filters {
+    margin-bottom: 20px;
+}
+
+#filterCargo {
+    color: gray;
+}
+
+#labelCargo {
+    padding-right: 20px;
+}
+
+.app-interno label {
+    margin-right: 10px;
+}
+
+.app-interno input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: gray;
+}
+
+.app-interno button {
+    margin-left: 10px;
+    padding: 10px;
+    /* background-color: #333; */
+    color: white;
+    border: none !important;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app-interno button:hover {
+    background-color: #d7d2d2;
+}
+
+.app-interno .response {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

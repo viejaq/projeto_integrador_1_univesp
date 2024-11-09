@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../../../assets/img/logo.png';
+import loginIcon from '../../../assets/img/login_interno.svg'
 
 export const InternoNavBar = () => {
   return (
@@ -28,12 +29,12 @@ export const InternoNavBar = () => {
               <button className="trabalhe_conosco"><span>Cadastro de Vendas</span></button>
             </Navbar.Brand>
           </span>
-
+{/* 
           <span className="navbar-text">
             <Navbar.Brand href="/AppInternoStatusPedido">
               <button className="trabalhe_conosco"><span>Status de Pedidos</span></button>
             </Navbar.Brand>
-          </span>
+          </span> */}
 
           <span className="navbar-text">
             <Navbar.Brand href="/AppInternoRH">
@@ -43,7 +44,9 @@ export const InternoNavBar = () => {
 
           <span className="navbar-text">
           <Navbar.Brand href="/">
-            <button className="trabalhe_conosco"><span>Sair</span></button>
+          <button id="icone-sair-int" className={`login-icon scrolled`}>
+                <img src={loginIcon} alt="Login" className="social-icon" />
+              </button>
           </Navbar.Brand>
           </span>
 
