@@ -1,8 +1,16 @@
 <?php
 header("Content-Type: application/json");
 
-require_once '../database.php';
-$db = getDatabaseConnection();
+/**
+ * Conectar ao banco SQLite
+ */
+try {
+    $db = new SQLite3('../minotti.sqlite');
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode(['message' => 'Erro ao conectar ao banco de dados', 'error' => $e->getMessage()]);
+    exit;
+}
 
 /**
  * Rota GET: Busca os dados do cliente

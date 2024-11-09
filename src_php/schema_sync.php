@@ -8,9 +8,10 @@ $sqlFile = 'schema.sql';
 /**
  * Conectar ao banco SQLite
  */
-$db = sqlite_open($dbFile, 0666, $error);
-if (!$db) {
-    die("Erro ao abrir o banco de dados SQLite: $error");
+try {
+    $db = new SQLite3($dbFile);
+} catch (Exception $e) {
+    die("Erro ao abrir o banco de dados SQLite: " . $e->getMessage());
 }
 
 /**
@@ -60,8 +61,8 @@ $schema = parseSchemaSQL($sqlFile);
  * Verifica se a tabela existe
  */
 function tableExists($db, $tableName) {
-    $result = sqlite_query($db, "SELECT name FROM sqlite_master WHERE type='table' AND name='$tableName'");
-    return sqlite_fetch_array($result, SQLITE_ASSOC) !== false;
+    $result = $db->query("SELECT name FROM sqlite_master WHERE type='table' AND name='$tableName'");
+    return $result->fetchArray(SQLITE3_ASSOC) !== false;
 }
 
 /**
@@ -69,8 +70,8 @@ function tableExists($db, $tableName) {
  */
 function getTableColumns($db, $tableName) {
     $columns = [];
-    $result = sqlite_query($db, "PRAGMA table_info($tableName)");
-    while ($row = sqlite_fetch_array($result, SQLITE_ASSOC)) {
+    $result = $db->query("PRAGMA table_info($tableName)");
+    while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
         $columns[$row['name']] = $row['type'];
     }
     return $columns;
@@ -87,7 +88,7 @@ function syncTable($db, $tableName, $columns) {
             $columnsSql[] = "$name $type";
         }
         $sql = "CREATE TABLE $tableName (" . implode(', ', $columnsSql) . ")";
-        sqlite_query($db, $sql);
+        $db->exec($sql);
         echo "Tabela '$tableName' criada com sucesso.\n";
     } else {
         // Sincroniza as colunas existentes
@@ -96,7 +97,7 @@ function syncTable($db, $tableName, $columns) {
         // Adicionar colunas que existem apenas no schema
         foreach ($columns as $name => $type) {
             if (!array_key_exists($name, $existingColumns)) {
-                sqlite_query($db, "ALTER TABLE $tableName ADD COLUMN $name $type");
+                $db->exec("ALTER TABLE $tableName ADD COLUMN $name $type");
                 echo "Coluna '$name' adicionada na tabela '$tableName'.\n";
             }
         }
