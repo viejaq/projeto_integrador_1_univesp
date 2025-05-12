@@ -66,6 +66,6 @@ model orcamento{
   cell String
   email String
   mensagem String
-  co_status String
+  co_status String @default("1")
   dt_criacao DateTime @default(now())
 }

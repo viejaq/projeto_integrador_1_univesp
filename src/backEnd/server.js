@@ -32,7 +32,7 @@ app.post('/dados_candidato', async (req, res) => {
 
 app.get('/dados_cliente', async (req, res) => {
     try {
-      const dados_cliente = await prisma.cliente_contato.findMany();
+      const dados_cliente = await prisma.orcamento.findMany();
       res.json(dados_cliente);
     } catch (err) {
       res.status(500).json({ message: 'Erro ao buscar cliente', error: err });
@@ -41,13 +41,14 @@ app.get('/dados_cliente', async (req, res) => {
   
   app.post('/dados_cliente', async (req, res) => {
     console.log(req.body);
-    const { nome, cidade, whatsapp, email, mensagem } = req.body;
+    const { nome, cidade, cell, email, mensagem } = req.body;
     try {
-      const newUser = await prisma.cliente_contato.create({
-        data: { nome, cidade, whatsapp, email, mensagem },
+      const newUser = await prisma.orcamento.create({
+        data: { nome, cidade, cell, email, mensagem, co_status:"1"}
       });
       res.status(200).json(newUser);
     } catch (err) {
+      console.log(err.stack);
       res.status(400).json({ message: 'Erro ao criar cliente', error: err });
     }
 

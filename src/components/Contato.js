@@ -8,11 +8,11 @@ import InputMask from 'react-input-mask';
 export const Contato = () => {
 
   const valoresIniciaisForm = {
-    nome: '',
-    cidade: '',
-    whatsapp: '',
-    email: '',
-    mensagem: ''
+    nome: 'Nome',
+    cidade: 'Cidade',
+    cell: '00000000000',
+    email: 'email@email.com',
+    mensagem: 'mensagem'
   }
   const [buttonText, setButtonText] = useState('Enviar');
   const [status, setStatus] = useState({});
@@ -69,8 +69,8 @@ export const Contato = () => {
                           value={dadosFrom.cidade} onChange={e => { onFormUpdate('cidade', e.target.value) }} />
                       </Col>
                       <Col size={12} sm={6} className="px-1 mb-3">
-                        <InputMask id='whatsapp' mask="(99) 99999-9999" placeholder="WhatsApp"
-                          value={dadosFrom.whatsapp} onChange={e => { onFormUpdate('whatsapp', e.target.value) }} />
+                        <InputMask id='cell' mask="(99) 99999-9999" placeholder="Celular"
+                          value={dadosFrom.cell} onChange={e => { onFormUpdate('cell', e.target.value) }} />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input id='email' type="email" placeholder="E-mail"
