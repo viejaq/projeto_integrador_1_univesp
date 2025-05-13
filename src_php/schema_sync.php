@@ -10,6 +10,11 @@ $sqlFile = 'schema.sql';
  */
 try {
     $db = new SQLite3($dbFile);
+
+    /**
+     * Ativa o suporte a foreign keys
+     */
+    $db->exec('PRAGMA foreign_keys = ON');
 } catch (Exception $e) {
     die("Erro ao abrir o banco de dados SQLite: " . $e->getMessage());
 }

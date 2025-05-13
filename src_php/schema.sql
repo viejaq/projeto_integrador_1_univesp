@@ -1,6 +1,6 @@
 -- Tabela candidato
 CREATE TABLE candidato (
-    id TEXT PRIMARY KEY NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     nome TEXT NOT NULL,
     whatsapp TEXT NOT NULL,
     email TEXT NOT NULL,
@@ -11,53 +11,36 @@ CREATE TABLE candidato (
 
 -- Tabela cliente
 CREATE TABLE cliente (
-    id TEXT PRIMARY KEY NOT NULL,
+    id_cliente INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     nome TEXT NOT NULL,
     cep TEXT NOT NULL,
     numero TEXT NOT NULL,
-    complemento TEXT NOT NULL,
-    dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+    complemento TEXT,
+    email TEXT,
+    tell TEXT NOT NULL
 );
 
 -- Tabela venda
 CREATE TABLE venda (
-    id TEXT PRIMARY KEY NOT NULL,
+    id_venda INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     prazo_entrega DATETIME NOT NULL,
-    anexo BLOB NOT NULL,
-    co_cliente TEXT NOT NULL,
-    dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+    anexo TEXT,
+    co_cliente INTEGER NOT NULL,
+    FOREIGN KEY (co_cliente) REFERENCES cliente(id_cliente) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 -- Tabela status
 CREATE TABLE status (
-    id TEXT PRIMARY KEY NOT NULL,
-    descrcao TEXT NOT NULL,
-    dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+    id_status INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    descricao TEXT NOT NULL
 );
 
 -- Tabela atividade
 CREATE TABLE atividade (
-    id TEXT PRIMARY KEY NOT NULL,
-    co_venda TEXT NOT NULL,
-    co_status TEXT NOT NULL,
-    dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
-);
-
--- Tabela status_orcamento
-CREATE TABLE status_orcamento (
-    id TEXT PRIMARY KEY NOT NULL,
-    descricao TEXT NOT NULL,
-    dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
-);
-
--- Tabela orcamento
-CREATE TABLE orcamento (
-    id TEXT PRIMARY KEY NOT NULL,
-    nome TEXT NOT NULL,
-    cidade TEXT NOT NULL,
-    cell TEXT NOT NULL,
-    email TEXT NOT NULL,
-    mensagem TEXT NOT NULL,
-    co_status TEXT NOT NULL,
-    dt_criacao DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    cod_venda INTEGER NOT NULL,
+    cod_status INTEGER NOT NULL,
+    data TIMESTAMP NOT NULL,
+    FOREIGN KEY (cod_venda) REFERENCES venda(id_venda) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (cod_status) REFERENCES status(id_status) ON DELETE RESTRICT ON UPDATE CASCADE
 );

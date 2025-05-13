@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "accessibility-react-widget": "^1.0.5",
     "animate.css": "^4.1.1",
+    "axios": "^1.9.0",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.19.2",
@@ -26,6 +27,7 @@
     "react-router-dom": "^6.22.3",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "recharts": "^2.15.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -58,7 +60,7 @@
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "prisma": "^5.11.0"
   },
-  "prisma":{
+  "prisma": {
     "seed": "node prisma/seed.js"
   }
 }

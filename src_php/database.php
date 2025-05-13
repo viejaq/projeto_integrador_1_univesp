@@ -10,5 +10,10 @@ function getDatabaseConnection() {
         die("Erro ao conectar com o banco de dados.");
     }
 
+    /**
+     * Ativa o suporte a foreign keys
+     */
+    $db->exec('PRAGMA foreign_keys = ON');
+
     return $db;
 }

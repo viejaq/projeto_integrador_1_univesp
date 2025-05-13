@@ -8,6 +8,7 @@ import AppInternoOrcamento from './frontEnd/appInterno/AppInternoOrcamento';
 import AppInternoStatusPedido from './frontEnd/appInterno/AppInternoStatusPedido'
 import AppInternoCadastrodeVenda from './frontEnd/appInterno/AppInternoCadastrodeVenda';
 import AppInternoRH from './frontEnd/appInterno/AppInternoRH';
+import AppInternoDashboard from './frontEnd/appInterno/AppInternoDashboard';
 
 function AppRouter() {
     return (
@@ -16,6 +17,7 @@ function AppRouter() {
                 <Route path="/" element={<AppHome />} />
                 <Route path="/trabalhe_conosco" element={<AppTrabalheConosco />} />
                 <Route path="/login" element={<Applogininterno />} />
+                <Route path="/AppInternoDashboard" element={<AppInternoDashboard />} />
                 <Route path="/AppInternoOrcamento" element={<AppInternoOrcamento />} />
                 <Route path="/AppInternoRH" element={<AppInternoRH />} />
                 <Route path="/AppInternoStatusPedido" element={<AppInternoStatusPedido />} />

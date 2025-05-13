@@ -5,7 +5,13 @@ header("Content-Type: application/json");
  * Conectar ao banco SQLite
  */
 try {
-    $db = new SQLite3('../minotti.sqlite');
+    $dbPath = __DIR__ . '/../db/minotti.sqlite';
+    $db = new SQLite3($dbPath);
+
+    /**
+     * Ativa o suporte a foreign keys
+     */
+    $db->exec('PRAGMA foreign_keys = ON');
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(['message' => 'Erro ao conectar ao banco de dados', 'error' => $e->getMessage()]);
