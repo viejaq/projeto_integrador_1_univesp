@@ -31,7 +31,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "api": "nodemon src/backEnd/server.js"
+    "runBackend": "nodemon src/backEnd/server.js",
+    "inserirDadosTesteBanco": "npx prisma db seed",
+    "consultaManualBanco": "npx prisma studio",
+    "limparBanco": "npx prisma migrate reset"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +56,8 @@
   },
   "devDependencies": {
     "prisma": "^5.11.0"
+  },
+  "prisma":{
+    "seed": "node prisma/seed.js"
   }
 }

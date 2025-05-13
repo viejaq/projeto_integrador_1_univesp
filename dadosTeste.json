@@ -1,0 +1,137 @@
+{
+  "clientes": [
+    {
+      "id_cliente": 1,
+      "nome": "João Silva",
+      "cep": "01010-000",
+      "numero": 123,
+      "complemento": "Apto 202"
+    },
+    {
+      "id_cliente": 2,
+      "nome": "Maria Oliveira",
+      "cep": "22030-001",
+      "numero": 456,
+      "complemento": "Casa"
+    },
+    {
+      "id_cliente": 3,
+      "nome": "Carlos Mendes",
+      "cep": "03040-050",
+      "numero": 789,
+      "complemento": "Bloco B"
+    },
+    {
+      "id_cliente": 4,
+      "nome": "Ana Souza",
+      "cep": "14020-100",
+      "numero": 321,
+      "complemento": "Sala 12"
+    },
+    {
+      "id_cliente": 5,
+      "nome": "Pedro Lima",
+      "cep": "45030-200",
+      "numero": 654,
+      "complemento": "Cobertura"
+    },
+    {
+      "id_cliente": 6,
+      "nome": "Fernanda Rocha",
+      "cep": "60040-300",
+      "numero": 987,
+      "complemento": "Galpão"
+    }
+  ],
+  "vendas": [
+    {"id_venda": 101, "prazo_entrega": "2025-04-15", "anexo": "nota_fiscal_101.pdf", "co_cliente": 1},
+    {"id_venda": 102, "prazo_entrega": "2025-05-10", "anexo": "nota_fiscal_102.pdf", "co_cliente": 2},
+    {"id_venda": 103, "prazo_entrega": "2025-06-01", "anexo": "nota_fiscal_103.pdf", "co_cliente": 3},
+    {"id_venda": 104, "prazo_entrega": "2025-06-15", "anexo": "nota_fiscal_104.pdf", "co_cliente": 3},
+    {"id_venda": 105, "prazo_entrega": "2025-07-05", "anexo": "nota_fiscal_105.pdf", "co_cliente": 4},
+    {"id_venda": 106, "prazo_entrega": "2025-07-20", "anexo": "nota_fiscal_106.pdf", "co_cliente": 4},
+    {"id_venda": 107, "prazo_entrega": "2025-08-01", "anexo": "nota_fiscal_107.pdf", "co_cliente": 5},
+    {"id_venda": 108, "prazo_entrega": "2025-08-10", "anexo": "nota_fiscal_108.pdf", "co_cliente": 5},
+    {"id_venda": 109, "prazo_entrega": "2025-09-01", "anexo": "nota_fiscal_109.pdf", "co_cliente": 6},
+    {"id_venda": 110, "prazo_entrega": "2025-09-15", "anexo": "nota_fiscal_110.pdf", "co_cliente": 6}
+  ],
+  "atividades": [
+    {"cod_venda": 101, "cod_status": 1, "data": "2025-03-25"},
+    {"cod_venda": 101, "cod_status": 2, "data": "2025-03-28"},
+    {"cod_venda": 101, "cod_status": 3, "data": "2025-04-02"},
+    {"cod_venda": 101, "cod_status": 4, "data": "2025-04-10"},
+    {"cod_venda": 101, "cod_status": 5, "data": "2025-04-12"},
+    {"cod_venda": 101, "cod_status": 6, "data": "2025-04-15"},
+
+    {"cod_venda": 102, "cod_status": 1, "data": "2025-03-26"},
+    {"cod_venda": 102, "cod_status": 2, "data": "2025-03-30"},
+    {"cod_venda": 102, "cod_status": 3, "data": "2025-04-05"},
+    {"cod_venda": 102, "cod_status": 4, "data": "2025-05-05"},
+    {"cod_venda": 102, "cod_status": 5, "data": "2025-05-08"},
+    {"cod_venda": 102, "cod_status": 6, "data": "2025-05-10"},
+
+    {"cod_venda": 103, "cod_status": 1, "data": "2025-04-01"},
+    {"cod_venda": 103, "cod_status": 2, "data": "2025-04-04"},
+    {"cod_venda": 103, "cod_status": 3, "data": "2025-04-10"},
+    {"cod_venda": 103, "cod_status": 4, "data": "2025-05-28"},
+    {"cod_venda": 103, "cod_status": 5, "data": "2025-05-30"},
+    {"cod_venda": 103, "cod_status": 6, "data": "2025-06-01"},
+
+    {"cod_venda": 104, "cod_status": 1, "data": "2025-04-03"},
+    {"cod_venda": 104, "cod_status": 2, "data": "2025-04-06"},
+    {"cod_venda": 104, "cod_status": 3, "data": "2025-04-15"},
+    {"cod_venda": 104, "cod_status": 4, "data": "2025-06-10"},
+    {"cod_venda": 104, "cod_status": 5, "data": "2025-06-12"},
+    {"cod_venda": 104, "cod_status": 6, "data": "2025-06-15"},
+
+    {"cod_venda": 105, "cod_status": 1, "data": "2025-05-05"},
+    {"cod_venda": 105, "cod_status": 2, "data": "2025-05-08"},
+    {"cod_venda": 105, "cod_status": 3, "data": "2025-05-15"},
+    {"cod_venda": 105, "cod_status": 4, "data": "2025-07-01"},
+    {"cod_venda": 105, "cod_status": 5, "data": "2025-07-03"},
+    {"cod_venda": 105, "cod_status": 6, "data": "2025-07-05"},
+
+    {"cod_venda": 106, "cod_status": 1, "data": "2025-05-10"},
+    {"cod_venda": 106, "cod_status": 2, "data": "2025-05-14"},
+    {"cod_venda": 106, "cod_status": 3, "data": "2025-05-20"},
+    {"cod_venda": 106, "cod_status": 4, "data": "2025-07-15"},
+    {"cod_venda": 106, "cod_status": 5, "data": "2025-07-18"},
+    {"cod_venda": 106, "cod_status": 6, "data": "2025-07-20"},
+
+    {"cod_venda": 107, "cod_status": 1, "data": "2025-06-01"},
+    {"cod_venda": 107, "cod_status": 2, "data": "2025-06-05"},
+    {"cod_venda": 107, "cod_status": 3, "data": "2025-06-10"},
+    {"cod_venda": 107, "cod_status": 4, "data": "2025-07-28"},
+    {"cod_venda": 107, "cod_status": 5, "data": "2025-07-30"},
+    {"cod_venda": 107, "cod_status": 6, "data": "2025-08-01"},
+
+    {"cod_venda": 108, "cod_status": 1, "data": "2025-06-03"},
+    {"cod_venda": 108, "cod_status": 2, "data": "2025-06-07"},
+    {"cod_venda": 108, "cod_status": 3, "data": "2025-06-15"},
+    {"cod_venda": 108, "cod_status": 4, "data": "2025-08-08"},
+    {"cod_venda": 108, "cod_status": 5, "data": "2025-08-09"},
+    {"cod_venda": 108, "cod_status": 6, "data": "2025-08-10"},
+
+    {"cod_venda": 109, "cod_status": 1, "data": "2025-07-01"},
+    {"cod_venda": 109, "cod_status": 2, "data": "2025-07-05"},
+    {"cod_venda": 109, "cod_status": 3, "data": "2025-07-12"},
+    {"cod_venda": 109, "cod_status": 4, "data": "2025-08-28"},
+    {"cod_venda": 109, "cod_status": 5, "data": "2025-08-30"},
+    {"cod_venda": 109, "cod_status": 6, "data": "2025-09-01"},
+
+    {"cod_venda": 110, "cod_status": 1, "data": "2025-07-10"},
+    {"cod_venda": 110, "cod_status": 2, "data": "2025-07-14"},
+    {"cod_venda": 110, "cod_status": 3, "data": "2025-07-20"},
+    {"cod_venda": 110, "cod_status": 4, "data": "2025-09-10"},
+    {"cod_venda": 110, "cod_status": 5, "data": "2025-09-12"},
+    {"cod_venda": 110, "cod_status": 6, "data": "2025-09-15"}
+  ],
+  "status": [
+    {"id_status": 1, "descricao": "Aguardando Medição Final"},
+    {"id_status": 2, "descricao": "Aguardando Aprovação Cliente"},
+    {"id_status": 3, "descricao": "Aguardando Fabricação"},
+    {"id_status": 4, "descricao": "Entrega"},
+    {"id_status": 5, "descricao": "Montagem Agendada"},
+    {"id_status": 6, "descricao": "Finalizado"}
+  ]
+}
