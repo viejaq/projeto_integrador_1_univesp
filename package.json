@@ -31,7 +31,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "api": "nodemon src/backEnd/server.js"
+    "backend": "nodemon src/backEnd/server.js",
+    "inserirDadosTesteBanco": "npx prisma db seed",
+    "consultaManualBanco": "npx prisma studio",
+    "limparBanco": "npx prisma migrate reset"
   },
   "eslintConfig": {
     "extends": [
@@ -54,5 +57,8 @@
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "prisma": "^5.11.0"
+  },
+  "prisma":{
+    "seed": "node prisma/seed.js"
   }
 }

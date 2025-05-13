@@ -13,59 +13,47 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model candidato{
-  id String @id @default(cuid())
-  nome String
-  whatsapp String
-  email String
-  cargo String
-  mensagem String
-  dt_criacao  DateTime @default(now())
-}
-
-model cliente{
-  id String @id @default(cuid())
-  nome String
-  cep String
-  numero String
-  complemento String
-  dt_criacao  DateTime @default(now())
-}
-
-model venda{
-  id String @id @default(cuid())
-  prazo_entrega DateTime
-  anexo Bytes
-  co_cliente String
-  dt_criacao  DateTime @default(now())
-}
-
-model status{
-  id String @id @default(cuid())
-  descrcao String
-  dt_criacao  DateTime @default(now())
-}
-
-model atividade{
-  id String @id @default(cuid())
-  co_venda String
-  co_status String
-  dt_criacao  DateTime @default(now())
-}
-
-model status_orcamento{
-  id String @id @default(cuid())
-  descricao String
-  dt_criacao  DateTime @default(now())
-}
-
-model orcamento{
-  id String @id @default(cuid())
-  nome String
-  cidade String
-  cell String
-  email String
-  mensagem String
-  co_status String
+model candidato {
+  id         Int      @id @default(autoincrement())
+  nome       String
+  whatsapp   String
+  email      String
+  cargo      String
+  mensagem   String
   dt_criacao DateTime @default(now())
+}
+
+model cliente {
+  id_cliente  Int     @id @default(autoincrement())
+  nome        String
+  cep         String
+  numero      String
+  tell        String
+  email       String?
+  complemento String?
+  vendas      venda[]
+}
+
+model venda {
+  id_venda      Int         @id @default(autoincrement())
+  prazo_entrega DateTime
+  anexo         String? // caminho para o arquivo ou URL
+  co_cliente    Int
+  cliente       cliente     @relation(fields: [co_cliente], references: [id_cliente])
+  atividades    atividade[]
+}
+
+model atividade {
+  id         Int      @id @default(autoincrement())
+  cod_venda  Int
+  cod_status Int
+  data       DateTime
+  venda      venda    @relation(fields: [cod_venda], references: [id_venda])
+  status     status   @relation(fields: [cod_status], references: [id_status])
+}
+
+model status {
+  id_status  Int         @id @default(autoincrement())
+  descricao  String
+  atividades atividade[]
 }

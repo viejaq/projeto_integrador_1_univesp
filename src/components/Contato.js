@@ -8,21 +8,21 @@ import InputMask from 'react-input-mask';
 export const Contato = () => {
 
   const valoresIniciaisForm = {
-    nome: '',
-    cidade: '',
-    whatsapp: '',
-    email: '',
-    mensagem: ''
+    nome: 'Nome',
+    cep: '14801350',
+    numero: 'S/N',
+    tell: '00000000000',
+    email: 'email@email.com',
+    complemento: 'mensagem'
   }
   const [buttonText, setButtonText] = useState('Enviar');
-  const [status, setStatus] = useState({});
   const [dadosFrom, setDadosForm] = useState(valoresIniciaisForm);
 
   const enviarFormulario = async (e) => {
     e.preventDefault();
     setButtonText("Enviando...");
 
-    let response = await fetch("http://localhost:3030/dados_cliente", {
+    let response = await fetch("http://localhost:3030/cliente", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -60,25 +60,29 @@ export const Contato = () => {
                   <h2>Solicite seu orçamento</h2>
                   <form>
                     <Row>
-                      <Col size={12} sm={6} className="px-1 mb-3">
+                      <Col size={12} sm={12} className="px-1 mb-3">
                         <input id='nome' type="text" placeholder="Nome"
                           value={dadosFrom.nome} onChange={e => { onFormUpdate('nome', e.target.value) }} />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
-                        <input id='cidade' type="text" placeholder="Cidade"
-                          value={dadosFrom.cidade} onChange={e => { onFormUpdate('cidade', e.target.value) }} />
+                        <input id='cep' mask="99999-999" type="text" placeholder="CEP"
+                          value={dadosFrom.cep} onChange={e => { onFormUpdate('cep', e.target.value) }} />
                       </Col>
                       <Col size={12} sm={6} className="px-1 mb-3">
-                        <InputMask id='whatsapp' mask="(99) 99999-9999" placeholder="WhatsApp"
-                          value={dadosFrom.whatsapp} onChange={e => { onFormUpdate('whatsapp', e.target.value) }} />
+                        <InputMask id='numero' placeholder="Nº"
+                          value={dadosFrom.numero} onChange={e => { onFormUpdate('numero', e.target.value) }} />
+                      </Col>
+                      <Col size={12} sm={6} className="px-1 mb-3">
+                        <InputMask id='tell' mask="(99) 99999-9999" placeholder="Celular"
+                          value={dadosFrom.tell} onChange={e => { onFormUpdate('tell', e.target.value) }} />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input id='email' type="email" placeholder="E-mail"
                           value={dadosFrom.email} onChange={e => { onFormUpdate('email', e.target.value) }} />
                       </Col>
-                      <Col size={12} className="px-1">
-                        <textarea id='mensagem' rows="6" placeholder="Mensagem"
-                          value={dadosFrom.mensagem} onChange={e => { onFormUpdate('mensagem', e.target.value) }}></textarea>
+                      <Col size={12} sm={12} className="px-1">
+                        <textarea id='complemento' rows="6" placeholder="complemento"
+                          value={dadosFrom.complemento} onChange={e => { onFormUpdate('complemento', e.target.value) }}></textarea>
                         <button onClick={enviarFormulario}><span>{buttonText}</span></button>
                       </Col>
                     </Row>
