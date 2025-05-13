@@ -30,9 +30,20 @@ app.post('/dados_candidato', async (req, res) => {
   }
 });
 
-app.get('/cliente', async (req, res) => {
+app.get('/clienteAll', async (req, res) => {
   try {
-    const dados_cliente = await prisma.orcamento.findMany();
+    const dados_cliente = await prisma.cliente.findMany({
+      include: {
+        vendas: {
+          include: {
+            atividades: {
+              orderBy: { data: 'asc' },
+              include: { status: true }
+            }
+          }
+        }
+      }
+    });
     res.json(dados_cliente);
   } catch (err) {
     res.status(500).json({ message: 'Erro ao buscar cliente', error: err });

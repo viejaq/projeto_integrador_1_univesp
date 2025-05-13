@@ -60,7 +60,7 @@ export const Contato = () => {
                   <h2>Solicite seu orçamento</h2>
                   <form>
                     <Row>
-                      <Col size={12} sm={6} className="px-1 mb-3">
+                      <Col size={12} sm={12} className="px-1 mb-3">
                         <input id='nome' type="text" placeholder="Nome"
                           value={dadosFrom.nome} onChange={e => { onFormUpdate('nome', e.target.value) }} />
                       </Col>
@@ -80,7 +80,7 @@ export const Contato = () => {
                         <input id='email' type="email" placeholder="E-mail"
                           value={dadosFrom.email} onChange={e => { onFormUpdate('email', e.target.value) }} />
                       </Col>
-                      <Col size={12} className="px-1">
+                      <Col size={12} sm={12} className="px-1">
                         <textarea id='complemento' rows="6" placeholder="complemento"
                           value={dadosFrom.complemento} onChange={e => { onFormUpdate('complemento', e.target.value) }}></textarea>
                         <button onClick={enviarFormulario}><span>{buttonText}</span></button>
