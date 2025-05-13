@@ -22,7 +22,7 @@ export const Contato = () => {
     e.preventDefault();
     setButtonText("Enviando...");
 
-    let response = await fetch("http://localhost:3030/dados_cliente", {
+    let response = await fetch("https://daedaluspi.fclar.unesp.br/api/dados_cliente", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",

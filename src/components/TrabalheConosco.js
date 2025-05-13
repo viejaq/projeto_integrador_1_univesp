@@ -43,7 +43,7 @@ export const TrabalheConosco = () => {
     // formData.append('message', formDetails.message);
     formData.append('file', formDetails.file); // Adicionando o arquivo ao FormData
 
-    let response = await fetch('http://localhost:3000/contato', {
+    let response = await fetch('https://daedaluspi.fclar.unesp.br/api/dados_contato', {
       method: 'POST',
       body: formData
     });
