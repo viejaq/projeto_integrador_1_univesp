@@ -1,0 +1,110 @@
+[
+    { "cod_venda": 101, "cod_status": 1, "data": "2025-03-25" },
+    { "cod_venda": 101, "cod_status": 2, "data": "2025-03-28" },
+    { "cod_venda": 101, "cod_status": 3, "data": "2025-04-02" },
+    { "cod_venda": 101, "cod_status": 4, "data": "2025-04-10" },
+    { "cod_venda": 101, "cod_status": 5, "data": "2025-04-12" },
+    { "cod_venda": 101, "cod_status": 6, "data": "2025-04-15" },
+
+    { "cod_venda": 102, "cod_status": 1, "data": "2025-03-26" },
+    { "cod_venda": 102, "cod_status": 2, "data": "2025-03-30" },
+    { "cod_venda": 102, "cod_status": 3, "data": "2025-04-05" },
+    { "cod_venda": 102, "cod_status": 4, "data": "2025-05-05" },
+    { "cod_venda": 102, "cod_status": 5, "data": "2025-05-08" },
+    { "cod_venda": 102, "cod_status": 6, "data": "2025-05-10" },
+
+    { "cod_venda": 103, "cod_status": 1, "data": "2025-04-01" },
+    { "cod_venda": 103, "cod_status": 2, "data": "2025-04-04" },
+    { "cod_venda": 103, "cod_status": 3, "data": "2025-04-10" },
+    { "cod_venda": 103, "cod_status": 4, "data": "2025-05-28" },
+    { "cod_venda": 103, "cod_status": 5, "data": "2025-05-30" },
+    { "cod_venda": 103, "cod_status": 6, "data": "2025-06-01" },
+
+    { "cod_venda": 104, "cod_status": 1, "data": "2025-04-03" },
+    { "cod_venda": 104, "cod_status": 2, "data": "2025-04-06" },
+    { "cod_venda": 104, "cod_status": 3, "data": "2025-04-15" },
+    { "cod_venda": 104, "cod_status": 4, "data": "2025-06-10" },
+    { "cod_venda": 104, "cod_status": 5, "data": "2025-06-12" },
+    { "cod_venda": 104, "cod_status": 6, "data": "2025-06-15" },
+
+    { "cod_venda": 105, "cod_status": 1, "data": "2025-05-05" },
+    { "cod_venda": 105, "cod_status": 2, "data": "2025-05-08" },
+    { "cod_venda": 105, "cod_status": 3, "data": "2025-05-15" },
+    { "cod_venda": 105, "cod_status": 4, "data": "2025-07-01" },
+    { "cod_venda": 105, "cod_status": 5, "data": "2025-07-03" },
+    { "cod_venda": 105, "cod_status": 6, "data": "2025-07-05" },
+
+    { "cod_venda": 106, "cod_status": 1, "data": "2025-05-10" },
+    { "cod_venda": 106, "cod_status": 2, "data": "2025-05-14" },
+    { "cod_venda": 106, "cod_status": 3, "data": "2025-05-20" },
+    { "cod_venda": 106, "cod_status": 4, "data": "2025-07-15" },
+    { "cod_venda": 106, "cod_status": 5, "data": "2025-07-18" },
+    { "cod_venda": 106, "cod_status": 6, "data": "2025-07-20" },
+
+    { "cod_venda": 107, "cod_status": 1, "data": "2025-06-01" },
+    { "cod_venda": 107, "cod_status": 2, "data": "2025-06-05" },
+    { "cod_venda": 107, "cod_status": 3, "data": "2025-06-10" },
+    { "cod_venda": 107, "cod_status": 4, "data": "2025-07-28" },
+    { "cod_venda": 107, "cod_status": 5, "data": "2025-07-30" },
+    { "cod_venda": 107, "cod_status": 6, "data": "2025-08-01" },
+
+    { "cod_venda": 108, "cod_status": 1, "data": "2025-06-03" },
+    { "cod_venda": 108, "cod_status": 2, "data": "2025-06-07" },
+    { "cod_venda": 108, "cod_status": 3, "data": "2025-06-15" },
+    { "cod_venda": 108, "cod_status": 4, "data": "2025-08-08" },
+    { "cod_venda": 108, "cod_status": 5, "data": "2025-08-09" },
+    { "cod_venda": 108, "cod_status": 6, "data": "2025-08-10" },
+
+    { "cod_venda": 109, "cod_status": 1, "data": "2025-07-01" },
+    { "cod_venda": 109, "cod_status": 2, "data": "2025-07-05" },
+    { "cod_venda": 109, "cod_status": 3, "data": "2025-07-12" },
+    { "cod_venda": 109, "cod_status": 4, "data": "2025-08-28" },
+    { "cod_venda": 109, "cod_status": 5, "data": "2025-08-30" },
+    { "cod_venda": 109, "cod_status": 6, "data": "2025-09-01" },
+
+    { "cod_venda": 110, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 110, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 110, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 110, "cod_status": 4, "data": "2025-09-10" },
+    { "cod_venda": 110, "cod_status": 5, "data": "2025-09-12" },
+    { "cod_venda": 110, "cod_status": 6, "data": "2025-09-15" },
+
+    { "cod_venda": 111, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 111, "cod_status": 2, "data": "2025-07-14" },
+
+    { "cod_venda": 112, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 112, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 112, "cod_status": 3, "data": "2025-07-20" },
+
+    { "cod_venda": 113, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 113, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 113, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 113, "cod_status": 4, "data": "2025-09-10" },
+
+    { "cod_venda": 114, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 114, "cod_status": 2, "data": "2025-07-14" },
+
+    { "cod_venda": 115, "cod_status": 1, "data": "2025-07-10" },
+
+    { "cod_venda": 116, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 116, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 116, "cod_status": 3, "data": "2025-07-20" },
+
+    { "cod_venda": 117, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 117, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 117, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 117, "cod_status": 4, "data": "2025-09-10" },
+    { "cod_venda": 117, "cod_status": 5, "data": "2025-09-12" },
+
+    { "cod_venda": 118, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 118, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 118, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 118, "cod_status": 4, "data": "2025-09-10" },
+    { "cod_venda": 118, "cod_status": 5, "data": "2025-09-12" },
+    { "cod_venda": 118, "cod_status": 6, "data": "2025-09-15" },
+
+    { "cod_venda": 119, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 119, "cod_status": 2, "data": "2025-07-14" },
+
+    { "cod_venda": 120, "cod_status": 1, "data": "2025-07-10" }
+  ]

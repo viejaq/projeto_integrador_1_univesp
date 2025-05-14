@@ -19,6 +19,12 @@ export const InternoNavBar = () => {
           </Nav>
 
           <span className="navbar-text">
+            <Navbar.Brand href="/AppInternoDashboard">
+              <button className="trabalhe_conosco"><span>Dashboard</span></button>
+            </Navbar.Brand>
+          </span>
+
+          <span className="navbar-text">
             <Navbar.Brand href="/AppInternoOrcamento">
               <button className="trabalhe_conosco"><span>Orçamentos</span></button>
             </Navbar.Brand>
