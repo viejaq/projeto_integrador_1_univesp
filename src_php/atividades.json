@@ -67,5 +67,44 @@
     { "cod_venda": 110, "cod_status": 3, "data": "2025-07-20" },
     { "cod_venda": 110, "cod_status": 4, "data": "2025-09-10" },
     { "cod_venda": 110, "cod_status": 5, "data": "2025-09-12" },
-    { "cod_venda": 110, "cod_status": 6, "data": "2025-09-15" }
+    { "cod_venda": 110, "cod_status": 6, "data": "2025-09-15" },
+
+    { "cod_venda": 111, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 111, "cod_status": 2, "data": "2025-07-14" },
+
+    { "cod_venda": 112, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 112, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 112, "cod_status": 3, "data": "2025-07-20" },
+
+    { "cod_venda": 113, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 113, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 113, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 113, "cod_status": 4, "data": "2025-09-10" },
+
+    { "cod_venda": 114, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 114, "cod_status": 2, "data": "2025-07-14" },
+
+    { "cod_venda": 115, "cod_status": 1, "data": "2025-07-10" },
+
+    { "cod_venda": 116, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 116, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 116, "cod_status": 3, "data": "2025-07-20" },
+
+    { "cod_venda": 117, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 117, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 117, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 117, "cod_status": 4, "data": "2025-09-10" },
+    { "cod_venda": 117, "cod_status": 5, "data": "2025-09-12" },
+
+    { "cod_venda": 118, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 118, "cod_status": 2, "data": "2025-07-14" },
+    { "cod_venda": 118, "cod_status": 3, "data": "2025-07-20" },
+    { "cod_venda": 118, "cod_status": 4, "data": "2025-09-10" },
+    { "cod_venda": 118, "cod_status": 5, "data": "2025-09-12" },
+    { "cod_venda": 118, "cod_status": 6, "data": "2025-09-15" },
+
+    { "cod_venda": 119, "cod_status": 1, "data": "2025-07-10" },
+    { "cod_venda": 119, "cod_status": 2, "data": "2025-07-14" },
+
+    { "cod_venda": 120, "cod_status": 1, "data": "2025-07-10" }
   ]

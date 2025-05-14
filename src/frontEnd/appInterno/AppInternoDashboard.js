@@ -27,6 +27,7 @@ function AppInternoDashboard() {
     }, []);
 
   const totalClientes = clientes.length;
+  const totalPedidos = pedidos.length;
   const pedidosPendentes = pedidos.filter(p => p.descricao !== 'Finalizado').length;
 
   const pedidosPorStatus = Object.keys(STATUS_CORES).map(status => ({
@@ -56,6 +57,7 @@ function AppInternoDashboard() {
           <div className="bg-white p-4 rounded shadow">
             <h2 className="text-xl font-semibold mb-2">Resumo</h2>
             <p>Total de clientes: {totalClientes}</p>
+            <p>Total de Pedidos: {totalPedidos}</p>
             <p>Pedidos pendentes: {pedidosPendentes}</p>
           </div>
         </div>

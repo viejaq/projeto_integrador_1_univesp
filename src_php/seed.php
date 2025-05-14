@@ -39,7 +39,12 @@ function seedDatabase($db) {
         [2, "Bruno", "23456-111", "200", "Apto 21", "(11) 92345-6789", "bruno@example.com"],
         [3, "Clara", "34567-222", "150", null, "(11) 93456-7890", "clara@example.com"],
         [4, "Diego", "45678-333", "99", "Fundos", "(11) 94567-8901", "diego@example.com"],
-        [5, "Eva", "56789-444", "101", "Bloco C", "(11) 95678-9012", "eva@example.com"]
+        [5, "Eva", "56789-444", "101", "Bloco C", "(11) 95678-9012", "eva@example.com"],        
+        [6, "Felipe", "67890-555", "88", "Casa 2", "(11) 96789-0123", "felipe@example.com"],
+        [7, "Gabriela", "78901-666", "112", "Apto 304", "(11) 97890-1234", "gabriela@example.com"],
+        [8, "Henrique", "89012-777", "75", null, "(11) 98901-2345", "henrique@example.com"],
+        [9, "Isabela", "90123-888", "59", "Casa Fundos", "(11) 99012-3456", "isabela@example.com"],
+        [10, "João", "01234-999", "140", "Bloco D", "(11) 90123-4567", "joao@example.com"]
     ];
 
     foreach ($clientes as $c) {
@@ -59,7 +64,7 @@ function seedDatabase($db) {
     $idVenda = 101;
     foreach ($clientes as $cliente) {
         for ($j = 0; $j < 2; $j++) {
-            $prazo = $j == 0 ? '2025-04-10' : '2025-04-20';
+            $prazo = date('Y-m-d', mt_rand(strtotime('2020-01-01'), strtotime('2025-01-01')));
             $stmt = $db->prepare("INSERT OR IGNORE INTO venda (id_venda, prazo_entrega, anexo, co_cliente)
                                   VALUES (:id, :prazo, NULL, :cliente)");
             $stmt->bindValue(':id', $idVenda, SQLITE3_INTEGER);
